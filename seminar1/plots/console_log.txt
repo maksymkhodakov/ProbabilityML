@@ -1,0 +1,62 @@
+Console output log for Seminar 1
+
+====================================
+Task 1 (2D): μ1=(0,1), μ2=(2,0), R1=diag(1,2), R2=diag(2,1) (QDA boundary)
+Prior probabilities: p1=0.50, p2=0.50
+Test size: 1000
+Accuracy: 0.8390
+Confusion matrix (rows=true, cols=pred):
+[[435  70]
+ [ 91 404]]
+Example posterior P(w1|x) for first 5 test samples:
+[0.0175 0.234  0.9265 0.3209 0.0079]
+====================================
+
+====================================
+Task 4 (2D): μ1=(1,1), μ2=(-1,-1), R1=I, R2=I (LDA linear boundary)
+Prior probabilities: p1=0.50, p2=0.50
+Test size: 1000
+Accuracy: 0.9260
+Confusion matrix (rows=true, cols=pred):
+[[456  36]
+ [ 38 470]]
+Example posterior P(w1|x) for first 5 test samples:
+[0.0052 0.9754 0.0288 0.9957 0.9958]
+====================================
+
+====================================
+Task 5 (3D): μ1=(0,0,0), μ2=(1,1,1), R1=diag(1,2,1), R2=diag(2,1,2)
+Prior probabilities: p1=0.50, p2=0.50
+Test size: 2000
+Accuracy: 0.7520
+Confusion matrix (rows=true, cols=pred):
+[[757 209]
+ [287 747]]
+====================================
+
+====================================
+Task 6A (2D): original covariances (QDA)
+Prior probabilities: p1=0.50, p2=0.50
+Test size: 1000
+Accuracy: 0.8420
+Confusion matrix (rows=true, cols=pred):
+[[452  69]
+ [ 89 390]]
+Example posterior P(w1|x) for first 5 test samples:
+[0.0032 0.8812 0.8457 0.0011 0.9487]
+====================================
+
+====================================
+Task 6B (2D): identity covariances (LDA)
+Prior probabilities: p1=0.50, p2=0.50
+Test size: 1000
+Accuracy: 0.8800
+Confusion matrix (rows=true, cols=pred):
+[[457  64]
+ [ 56 423]]
+Example posterior P(w1|x) for first 5 test samples:
+[0.0036 0.8549 0.8926 0.0047 0.7054]
+====================================
+
+All figures saved to folder: plots/
+Console log saved to: plots/console_log.txt
